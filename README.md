@@ -327,20 +327,18 @@ return x * mask
 <p align="justify">A GCN propaga informação entre vizinhos usando a operação:</p>
 
 <p align="center">
+<b>H<sup>(l+1)</sup> = σ( D̂<sup>-1/2</sup> Â D̂<sup>-1/2</sup> H<sup>(l)</sup> W<sup>(l)</sup> )</b>
+</p>
 
-$$
-H^{(l+1)}
-=========
+<p align="justify">Onde:</p>
 
-\sigma
-\left(
-\hat{D}^{-1/2}
-\hat{A}
-\hat{D}^{-1/2}
-H^{(l)}
-W^{(l)}
-\right)
-$$
+<p align="justify">
+
+* <b>Â</b> representa matriz de adjacência com self-loops
+* <b>D̂</b> representa matriz de graus
+* <b>H<sup>(l)</sup></b> representa embeddings da camada atual
+* <b>W<sup>(l)</sup></b> representa pesos treináveis
+* <b>σ</b> representa função de ativação não-linear
 
 </p>
 
